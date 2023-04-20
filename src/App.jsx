@@ -63,7 +63,7 @@ const App = () => {
         </div>
       ) : (
         <>
-          <MainContent location={data} />
+          <MainContent location={location} data={data} />
           <PaginationResults setData={setData} location={location} />
           {loading && <Loading type={loading ? "loading" : ""} />}
         </>
